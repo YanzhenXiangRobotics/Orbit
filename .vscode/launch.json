@@ -5,7 +5,9 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            // "name": "Python: Current File",
+            "name": "Python",
+            "justMyCode": false,
             "type": "python",
             "request": "launch",
             "program": "${file}",
@@ -15,7 +17,11 @@
                 "RESOURCE_NAME": "IsaacSim"
             },
             "envFile": "${workspaceFolder}/.vscode/.python.env",
-            "preLaunchTask": "setup_python_env"
+            "preLaunchTask": "setup_python_env",
+            "args": ["--task",
+                    "Isaac-Reach-Franka-v0",
+                    "--headless"],
+            "program":"/home/xyz/PRL/Orbit/source/standalone/workflows/rsl_rl/train.py"
         },
         {
             "name": "Python: Attach (windows-x86_64/linux-x86_64)",

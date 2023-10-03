@@ -108,7 +108,8 @@ class ControlCfg:
     """Processing of MDP actions."""
 
     # action space
-    control_type = "default"  # "default", "inverse_kinematics"
+    # control_type = "default"  # "default", "inverse_kinematics"
+    control_type = "inverse_kinematics"
     # decimation: Number of control action updates @ sim dt per policy dt
     decimation = 2
 
